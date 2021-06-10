@@ -32,6 +32,7 @@ const router = async () => {
     console.log(match)
 }
 
+window.addEventListener("popstate", router()) 
 
 document.body.addEventListener("click", e => {
     if(e.target.matches('[data-link]')){
